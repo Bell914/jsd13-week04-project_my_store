@@ -27,8 +27,13 @@ body {
 }
 
 /* Web-safe font stack for Thai Baht (฿) currency symbol */
-.currency {
-    font-family: 'Tahoma', 'Leelawadee UI', 'Segoe UI', 'Sarabun', sans-serif;
+.currency-symbol,
+.currency,
+.accordion-content .currency-symbol,
+.filter-sidebar .currency-symbol,
+.price-range .currency-symbol,
+.filter-panel .currency-symbol {
+    font-family: 'Tahoma', 'Sarabun', Arial, sans-serif !important;
     font-weight: 700;
 }
 
