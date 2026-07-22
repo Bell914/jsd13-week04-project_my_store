@@ -156,6 +156,19 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* 1. :nth-child() pseudo-class for alternating card styles */
+.product-card:nth-child(even) {
+    background-color: #1a203e;
+}
+
+/* 2. :hover pseudo-class for card elevation & lightning glow effect */
+.product-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(56, 189, 248, 0.25), 0 0 12px rgba(251, 191, 36, 0.2);
+    border-color: #38bdf8;
 }
 
 .product-card img {
