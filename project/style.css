@@ -276,12 +276,11 @@ main {
     color: #f8fafc;
 }
 
-/* Products Grid Section (Flexbox) */
+/* Products Grid Section (CSS Grid) */
 .products-container {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
-    justify-content: flex-start;
 }
 
 .product-card {
@@ -290,7 +289,6 @@ main {
     border: 1px solid #2a3356;
     border-radius: 10px;
     padding: 1.25rem;
-    flex: 0 0 23%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -562,6 +560,10 @@ footer {
     .shop-meta-controls {
         width: 100%;
         justify-content: space-between;
+    }
+
+    .products-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .product-card {
