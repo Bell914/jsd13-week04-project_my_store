@@ -138,6 +138,46 @@ main {
     padding-bottom: 0.5rem;
 }
 
+/* Filter Accordion Details & Summary */
+.filter-accordion {
+    border-bottom: 1px solid #2a3356;
+    padding-bottom: 0.75rem;
+}
+
+.filter-accordion summary {
+    font-family: 'Cinzel', serif;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #fbbf24;
+    cursor: pointer;
+    padding: 0.5rem 0;
+    user-select: none;
+}
+
+.accordion-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding-top: 0.5rem;
+    padding-left: 0.25rem;
+}
+
+.accordion-content label {
+    font-size: 0.95rem;
+    color: #e2e8f0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.accordion-content input[type="checkbox"] {
+    accent-color: #38bdf8;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
 .filter-group,
 .sort-group {
     display: flex;
