@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Inter:wght@400;500;600;700&display=swap');
+
+/* Global Reset & Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0b0d19;
+    color: #e2e8f0;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Header & Navigation (Flexbox) */
+header {
+    background-color: #12162b;
+    border-bottom: 2px solid #38bdf8;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    color: #fbbf24;
+    text-shadow: 0 0 10px rgba(251, 191, 36, 0.4);
+    letter-spacing: 1px;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+header nav ul li a {
+    color: #f1f5f9;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.05rem;
+    padding: 0.5rem 0.75rem;
+}
+
+/* Main Content Area */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+/* Controls: Filter & Sort Bar (Flexbox) */
+.controls {
+    background-color: #171c36;
+    border: 1px solid #2a3356;
+    border-radius: 8px;
+    padding: 1.25rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+.filter-bar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+}
+
+.filter-bar h3 {
+    font-family: 'Cinzel', serif;
+    color: #38bdf8;
+    font-size: 1.1rem;
+}
+
+.filter-group,
+.sort-group {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.filter-group label,
+.sort-group label {
+    font-size: 0.95rem;
+    color: #94a3b8;
+    font-weight: 500;
+}
+
+.filter-group select,
+.sort-group select {
+    background-color: #0b0d19;
+    color: #f8fafc;
+    border: 1px solid #38bdf8;
+    border-radius: 6px;
+    padding: 0.4rem 0.8rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.95rem;
+}
+
+.sort-bar {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Products Grid Section (Flexbox) */
+.products-grid h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.8rem;
+    color: #fbbf24;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #38bdf8;
+    padding-left: 0.75rem;
+}
+
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.75rem;
+    justify-content: center;
+}
+
+.product-card {
+    background-color: #171c36;
+    border: 1px solid #2a3356;
+    border-radius: 10px;
+    padding: 1.25rem;
+    width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    border: 1px solid #2a3356;
+}
+
+.product-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.2rem;
+    color: #f8fafc;
+    margin-bottom: 0.5rem;
+}
+
+.product-price {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fbbf24;
+    margin-bottom: 1rem;
+}
+
+.add-to-cart-btn {
+    background-color: #38bdf8;
+    color: #0b0d19;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1.25rem;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    margin-top: auto;
+}
+
+/* Pagination (Flexbox) */
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.page-link {
+    color: #f8fafc;
+    background-color: #171c36;
+    border: 1px solid #2a3356;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.page-link.active {
+    background-color: #fbbf24;
+    color: #0b0d19;
+    border-color: #fbbf24;
+}
+
+/* Footer Section (Flexbox) */
+footer {
+    background-color: #12162b;
+    border-top: 2px solid #38bdf8;
+    margin-top: 4rem;
+    padding: 3rem 1.5rem 1.5rem;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.footer-newsletter {
+    flex: 1 1 400px;
+}
+
+.footer-newsletter h3,
+.footer-social h3 {
+    font-family: 'Cinzel', serif;
+    color: #fbbf24;
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+}
+
+.footer-newsletter p {
+    color: #94a3b8;
+    margin-bottom: 1rem;
+    font-size: 0.95rem;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.newsletter-form input[type="email"] {
+    flex: 1 1 240px;
+    background-color: #0b0d19;
+    border: 1px solid #38bdf8;
+    border-radius: 6px;
+    padding: 0.6rem 0.8rem;
+    color: #f8fafc;
+    font-size: 0.95rem;
+}
+
+.newsletter-form button {
+    background-color: #fbbf24;
+    color: #0b0d19;
+    border: none;
+    border-radius: 6px;
+    padding: 0.6rem 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.footer-social {
+    flex: 1 1 250px;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.social-links li a {
+    color: #38bdf8;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footer-bottom {
+    max-width: 1200px;
+    margin: 2rem auto 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid #2a3356;
+    text-align: center;
+    color: #64748b;
+    font-size: 0.9rem;
+}
