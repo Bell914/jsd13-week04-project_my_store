@@ -307,3 +307,47 @@ footer {
     color: #64748b;
     font-size: 0.9rem;
 }
+
+/* Responsive Layout for Mobile Screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .controls {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-group,
+    .sort-group {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-group select,
+    .sort-group select {
+        width: 100%;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
