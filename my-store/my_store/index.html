@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thunder Wizard — Arcane Wand Collection & Tempest Artifacts</title>
+  <meta name="description" content="Explore master-crafted wands forged in nighttime storms, infused with dragon heartstrings, thunderbird feathers, and raw lightning energy.">
+  
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Accessibility Skip Link -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Ambient Storm Background -->
+  <div class="sky-background" aria-hidden="true"></div>
+
+  <!-- Form wrapper enables CSS-only filter toggling via :checked -->
+  <form class="shop-wrapper" id="shop-form">
+
+    <!-- CSS Hidden Toggles for Mobile Nav & Drawer -->
+    <input type="checkbox" id="nav-toggle" class="css-toggle-input">
+    <input type="checkbox" id="drawer-toggle" class="css-toggle-input">
+
+    <!-- CSS Hidden Filter Inputs -->
+    <input type="checkbox" id="filter-elder" class="filter-input wood-filter-input">
+    <input type="checkbox" id="filter-dragonwood" class="filter-input wood-filter-input">
+    <input type="checkbox" id="filter-oak" class="filter-input wood-filter-input">
+    <input type="checkbox" id="filter-obsidian" class="filter-input wood-filter-input">
+    <input type="checkbox" id="filter-willow" class="filter-input wood-filter-input">
+    <input type="checkbox" id="filter-ebony" class="filter-input wood-filter-input">
+
+    <input type="checkbox" id="filter-thunderbird" class="filter-input core-filter-input">
+    <input type="checkbox" id="filter-dragonheart" class="filter-input core-filter-input">
+    <input type="checkbox" id="filter-phoenix" class="filter-input core-filter-input">
+    <input type="checkbox" id="filter-crystal" class="filter-input core-filter-input">
+
+    <!-- Sticky Header -->
+    <header class="header">
+      <div class="header-container">
+        <a href="#" class="brand-logo" aria-label="Thunder Wizard Home">
+          <div class="logo-icon-wrap">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+          </div>
+          <div class="logo-text">Thunder <span>Wizard</span></div>
+        </a>
+
+        <nav class="main-nav" id="main-nav" aria-label="Main Navigation">
+          <ul class="nav-list">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link active" aria-current="page">Wands</a></li>
+            <li><a href="#" class="nav-link">Grimoires</a></li>
+            <li><a href="#" class="nav-link">Potions</a></li>
+            <li><a href="#" class="nav-link">Custom Forge</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a href="#search" class="icon-btn" aria-label="Search Catalog">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+          </a>
+
+          <a href="#wishlist" class="icon-btn wishlist-header-btn" aria-label="View Wishlist">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+            </svg>
+            <span class="badge-count">3</span>
+          </a>
+
+          <a href="#cart" class="icon-btn cart-header-btn" aria-label="View Cart">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="9" cy="21" r="1"></circle>
+              <circle cx="20" cy="21" r="1"></circle>
+              <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+            </svg>
+            <span class="badge-count">2</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle Label -->
+          <label for="nav-toggle" class="icon-btn mobile-nav-toggle" aria-label="Toggle Mobile Menu">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </label>
+        </div>
+      </div>
+    </header>
+
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb-nav">
+      <ol class="breadcrumb-list">
+        <li class="breadcrumb-item"><a href="#">Home</a></li>
+        <li class="breadcrumb-separator">/</li>
+        <li class="breadcrumb-item" aria-current="page">Arcane Wands</li>
+      </ol>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="hero-banner">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg>
+            Tempest Attuned Wands
+          </div>
+          <h1 class="hero-title">Wands Forged in the <span>Storm Sky</span></h1>
+          <p class="hero-desc">
+            Hand-crafted wooden conductors infused with celestial lightning, phoenix feathers, and dragon heartstrings. Calibrated for master wizards seeking unmatched spell precision.
+          </p>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-value">100%</span>
+              <span class="stat-label">Storm Attuned</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">4.9 ★</span>
+              <span class="stat-label">Guild Rating</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-value">Free</span>
+              <span class="stat-label">Spell-Shield Shipping</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Decorative SVG Lightning -->
+        <svg class="hero-decor-lightning" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1">
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Main Content Layout -->
+    <main id="main-content" class="main-container">
+
+      <!-- Toolbar -->
+      <div class="toolbar">
+        <div class="toolbar-left">
+          <!-- Mobile Drawer Toggle Label -->
+          <label for="drawer-toggle" class="filter-drawer-btn">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+            </svg>
+            Filters
+          </label>
+          <div class="product-count">
+            Showing <strong>8</strong> magical wands
+          </div>
+        </div>
+
+        <div class="toolbar-right">
+          <!-- CSS Search Simulation Input -->
+          <div class="search-box">
+            <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" class="search-input" placeholder="Filter by keyword..." aria-label="Search products">
+          </div>
+
+          <!-- Sort Select -->
+          <div class="sort-box">
+            <label for="sort-select" class="sort-label">Sort by:</label>
+            <select id="sort-select" class="sort-select">
+              <option value="featured">Featured Attunement</option>
+              <option value="price-low">Price: Low to High</option>
+              <option value="price-high">Price: High to Low</option>
+              <option value="rating">Highest Rated</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Shop Layout (Sidebar + Grid) -->
+      <div class="shop-layout">
+
+        <!-- Filter Sidebar / Drawer -->
+        <aside class="filter-sidebar" id="filter-sidebar" aria-label="Filter Options">
+          <div class="filter-header">
+            <h2 class="filter-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon>
+              </svg>
+              Refine Artifacts
+            </h2>
+            <label for="drawer-toggle" class="close-drawer-btn" aria-label="Close Filter Sidebar">✕</label>
+            <button type="reset" class="clear-all-btn">Clear All</button>
+          </div>
+
+          <!-- Wood Type Filter -->
+          <div class="filter-group">
+            <h3 class="filter-group-title">Wood Type</h3>
+            <ul class="checkbox-list">
+              <li>
+                <label for="filter-elder" class="checkbox-label">
+                  <span class="custom-checkbox">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  Elder Wood
+                  <span class="count-tag">(2)</span>
+                </label>
+              </li>
+              <li>
+                <label for="filter-dragonwood" class="checkbox-label">
+                  <span class="custom-checkbox">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  Dragonwood
+                  <span class="count-tag">(2)</span>
+                </label>
+              </li>
+              <li>
+                <label for="filter-oak" class="checkbox-label">
+                  <span class="custom-checkbox">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  Tempest Oak
+                  <span class="count-tag">(2)</span>
+                </label>
+              </li>
+              <li>
+                <label for="filter-obsidian" class="checkbox-label">
+                  <span class="custom-checkbox">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  Obsidian Bark
+                  <span class="count-tag">(1)</span>
+                </label>
+              </li>
+              <li>
+                <label for="filter-willow" class="checkbox-label">
+                  <span class="custom-checkbox">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  Storm Willow
+                  <span class="count-tag">(1)</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Core Type Filter -->
+          <div class="filter-group">
+            <h3 class="filter-group-title">Core Essence</h3>
+            <ul class="checkbox-list">
+              <li>
+                <label for="filter-thunderbird" class="checkbox-label">
+                  <span class="custom-checkbox">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  Thunderbird Feather
+                </label>
+              </li>
+              <li>
+                <label for="filter-dragonheart" class="checkbox-label">
+                  <span class="custom-checkbox">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  Dragon Heartstring
+                </label>
+              </li>
+              <li>
+                <label for="filter-phoenix" class="checkbox-label">
+                  <span class="custom-checkbox">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  Phoenix Feather
+                </label>
+              </li>
+              <li>
+                <label for="filter-crystal" class="checkbox-label">
+                  <span class="custom-checkbox">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                  </span>
+                  Celestial Crystal
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Price Range Filter -->
+          <div class="filter-group">
+            <h3 class="filter-group-title">Max Price (Galleons)</h3>
+            <div class="price-range-container">
+              <div class="price-values">
+                <span>Min: 150g</span>
+                <span>Max: 600g</span>
+              </div>
+              <input type="range" class="range-slider" min="150" max="600" step="10" value="600">
+            </div>
+          </div>
+
+        </aside>
+
+        <!-- Product Grid Container -->
+        <div class="product-grid-container">
+
+          <!-- Responsive Product Grid -->
+          <div class="product-grid" id="product-grid">
+
+            <!-- Card 1 -->
+            <article class="product-card wood-elder core-thunderbird">
+              <div class="lightning-streak-overlay">
+                <svg class="lightning-bolt-svg" viewBox="0 0 200 300" preserveAspectRatio="none">
+                  <path d="M 120 0 L 70 80 L 110 90 L 40 170 L 90 175 L 20 300" />
+                </svg>
+              </div>
+
+              <div class="card-media">
+                <span class="product-badge">Bestseller</span>
+                
+                <!-- CSS Wishlist Toggle -->
+                <input type="checkbox" id="wishlist-1" class="wishlist-toggle-input">
+                <label for="wishlist-1" class="wishlist-btn" aria-label="Add to Wishlist">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </label>
+
+                <div class="wand-svg-wrap">
+                  <svg class="wand-svg-graphic" width="180" height="180" viewBox="0 0 200 200" fill="none">
+                    <circle cx="100" cy="100" r="70" fill="rgba(212,255,0,0.25)" />
+                    <line x1="30" y1="170" x2="170" y2="30" stroke="#4a3728" stroke-width="10" stroke-linecap="round"/>
+                    <line x1="30" y1="170" x2="170" y2="30" stroke="#d4ff00" stroke-width="3" stroke-dasharray="8 4"/>
+                    <circle cx="35" cy="165" r="9" fill="#1e1947" stroke="#d4ff00" stroke-width="2"/>
+                    <polygon points="170,30 160,20 175,15 185,25" fill="#d4ff00"/>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="card-meta">Elder Wood • 13.5 In</div>
+                <h3 class="product-name">Volt-Arc Elder Wand</h3>
+                <div class="rating-row">
+                  <span class="stars">★★★★★</span>
+                  <span>4.9 (58)</span>
+                </div>
+                <div class="price-row">
+                  <span class="price-amount">340</span>
+                  <span class="price-unit">Galleons</span>
+                </div>
+                <div class="card-actions">
+                  <a href="#modal-1" class="btn-quick-view">Quick View</a>
+                  <a href="#cart-added" class="btn-add-cart">Add to Cart</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="product-card wood-dragonwood core-dragonheart">
+              <div class="lightning-streak-overlay">
+                <svg class="lightning-bolt-svg" viewBox="0 0 200 300" preserveAspectRatio="none">
+                  <path d="M 120 0 L 70 80 L 110 90 L 40 170 L 90 175 L 20 300" />
+                </svg>
+              </div>
+
+              <div class="card-media">
+                <span class="product-badge">Storm Forged</span>
+                
+                <input type="checkbox" id="wishlist-2" class="wishlist-toggle-input">
+                <label for="wishlist-2" class="wishlist-btn" aria-label="Add to Wishlist">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </label>
+
+                <div class="wand-svg-wrap">
+                  <svg class="wand-svg-graphic" width="180" height="180" viewBox="0 0 200 200" fill="none">
+                    <circle cx="100" cy="100" r="70" fill="rgba(56,189,248,0.25)" />
+                    <line x1="30" y1="170" x2="170" y2="30" stroke="#332419" stroke-width="12" stroke-linecap="round"/>
+                    <line x1="30" y1="170" x2="170" y2="30" stroke="#38bdf8" stroke-width="3"/>
+                    <polygon points="170,30 160,20 175,15 185,25" fill="#38bdf8"/>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="card-meta">Dragonwood • 14.0 In</div>
+                <h3 class="product-name">Tempest Dragon Conduit</h3>
+                <div class="rating-row">
+                  <span class="stars">★★★★★</span>
+                  <span>5.0 (34)</span>
+                </div>
+                <div class="price-row">
+                  <span class="price-amount">420</span>
+                  <span class="price-unit">Galleons</span>
+                </div>
+                <div class="card-actions">
+                  <a href="#modal-2" class="btn-quick-view">Quick View</a>
+                  <a href="#cart-added" class="btn-add-cart">Add to Cart</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="product-card wood-oak core-phoenix">
+              <div class="lightning-streak-overlay">
+                <svg class="lightning-bolt-svg" viewBox="0 0 200 300" preserveAspectRatio="none">
+                  <path d="M 120 0 L 70 80 L 110 90 L 40 170 L 90 175 L 20 300" />
+                </svg>
+              </div>
+
+              <div class="card-media">
+                <span class="product-badge">Rare</span>
+                
+                <input type="checkbox" id="wishlist-3" class="wishlist-toggle-input">
+                <label for="wishlist-3" class="wishlist-btn" aria-label="Add to Wishlist">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </label>
+
+                <div class="wand-svg-wrap">
+                  <svg class="wand-svg-graphic" width="180" height="180" viewBox="0 0 200 200" fill="none">
+                    <circle cx="100" cy="100" r="70" fill="rgba(255,119,0,0.25)" />
+                    <line x1="30" y1="170" x2="170" y2="30" stroke="#523924" stroke-width="9" stroke-linecap="round"/>
+                    <line x1="30" y1="170" x2="170" y2="30" stroke="#ff7700" stroke-width="2.5"/>
+                    <polygon points="170,30 160,20 175,15 185,25" fill="#ff7700"/>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="card-meta">Tempest Oak • 12.0 In</div>
+                <h3 class="product-name">Fulminant Phoenix Baton</h3>
+                <div class="rating-row">
+                  <span class="stars">★★★★★</span>
+                  <span>4.8 (29)</span>
+                </div>
+                <div class="price-row">
+                  <span class="price-amount">290</span>
+                  <span class="price-unit">Galleons</span>
+                </div>
+                <div class="card-actions">
+                  <a href="#modal-3" class="btn-quick-view">Quick View</a>
+                  <a href="#cart-added" class="btn-add-cart">Add to Cart</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 4 -->
+            <article class="product-card wood-obsidian core-crystal">
+              <div class="lightning-streak-overlay">
+                <svg class="lightning-bolt-svg" viewBox="0 0 200 300" preserveAspectRatio="none">
+                  <path d="M 120 0 L 70 80 L 110 90 L 40 170 L 90 175 L 20 300" />
+                </svg>
+              </div>
+
+              <div class="card-media">
+                <span class="product-badge">Legendary</span>
+                
+                <input type="checkbox" id="wishlist-4" class="wishlist-toggle-input">
+                <label for="wishlist-4" class="wishlist-btn" aria-label="Add to Wishlist">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </label>
+
+                <div class="wand-svg-wrap">
+                  <svg class="wand-svg-graphic" width="180" height="180" viewBox="0 0 200 200" fill="none">
+                    <circle cx="100" cy="100" r="70" fill="rgba(168,85,247,0.25)" />
+                    <line x1="30" y1="170" x2="170" y2="30" stroke="#1c162b" stroke-width="11" stroke-linecap="round"/>
+                    <line x1="30" y1="170" x2="170" y2="30" stroke="#a855f7" stroke-width="3"/>
+                    <polygon points="170,30 160,20 175,15 185,25" fill="#a855f7"/>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="card-meta">Obsidian Bark • 11.5 In</div>
+                <h3 class="product-name">Obsidian Volt Spire</h3>
+                <div class="rating-row">
+                  <span class="stars">★★★★★</span>
+                  <span>4.9 (19)</span>
+                </div>
+                <div class="price-row">
+                  <span class="price-amount">510</span>
+                  <span class="price-unit">Galleons</span>
+                </div>
+                <div class="card-actions">
+                  <a href="#modal-4" class="btn-quick-view">Quick View</a>
+                  <a href="#cart-added" class="btn-add-cart">Add to Cart</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 5 -->
+            <article class="product-card wood-willow core-thunderbird">
+              <div class="lightning-streak-overlay">
+                <svg class="lightning-bolt-svg" viewBox="0 0 200 300" preserveAspectRatio="none">
+                  <path d="M 120 0 L 70 80 L 110 90 L 40 170 L 90 175 L 20 300" />
+                </svg>
+              </div>
+
+              <div class="card-media">
+                <span class="product-badge">Popular</span>
+                
+                <input type="checkbox" id="wishlist-5" class="wishlist-toggle-input">
+                <label for="wishlist-5" class="wishlist-btn" aria-label="Add to Wishlist">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </label>
+
+                <div class="wand-svg-wrap">
+                  <svg class="wand-svg-graphic" width="180" height="180" viewBox="0 0 200 200" fill="none">
+                    <circle cx="100" cy="100" r="70" fill="rgba(34,197,94,0.25)" />
+                    <line x1="30" y1="170" x2="170" y2="30" stroke="#23422d" stroke-width="8" stroke-linecap="round"/>
+                    <line x1="30" y1="170" x2="170" y2="30" stroke="#22c55e" stroke-width="2"/>
+                    <polygon points="170,30 160,20 175,15 185,25" fill="#22c55e"/>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="card-meta">Storm Willow • 10.5 In</div>
+                <h3 class="product-name">Stormweaver Willow Stick</h3>
+                <div class="rating-row">
+                  <span class="stars">★★★★★</span>
+                  <span>4.7 (64)</span>
+                </div>
+                <div class="price-row">
+                  <span class="price-amount">195</span>
+                  <span class="price-unit">Galleons</span>
+                </div>
+                <div class="card-actions">
+                  <a href="#modal-5" class="btn-quick-view">Quick View</a>
+                  <a href="#cart-added" class="btn-add-cart">Add to Cart</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 6 -->
+            <article class="product-card wood-ebony core-thunderbird">
+              <div class="lightning-streak-overlay">
+                <svg class="lightning-bolt-svg" viewBox="0 0 200 300" preserveAspectRatio="none">
+                  <path d="M 120 0 L 70 80 L 110 90 L 40 170 L 90 175 L 20 300" />
+                </svg>
+              </div>
+
+              <div class="card-media">
+                <span class="product-badge">New Release</span>
+                
+                <input type="checkbox" id="wishlist-6" class="wishlist-toggle-input">
+                <label for="wishlist-6" class="wishlist-btn" aria-label="Add to Wishlist">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </label>
+
+                <div class="wand-svg-wrap">
+                  <svg class="wand-svg-graphic" width="180" height="180" viewBox="0 0 200 200" fill="none">
+                    <circle cx="100" cy="100" r="70" fill="rgba(226,232,240,0.2)" />
+                    <line x1="30" y1="170" x2="170" y2="30" stroke="#111" stroke-width="11" stroke-linecap="round"/>
+                    <line x1="30" y1="170" x2="170" y2="30" stroke="#e2e8f0" stroke-width="2.5"/>
+                    <polygon points="170,30 160,20 175,15 185,25" fill="#e2e8f0"/>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="card-meta">Shadow Ebony • 13.0 In</div>
+                <h3 class="product-name">Shadow Ebony Fulgurite</h3>
+                <div class="rating-row">
+                  <span class="stars">★★★★★</span>
+                  <span>4.9 (41)</span>
+                </div>
+                <div class="price-row">
+                  <span class="price-amount">380</span>
+                  <span class="price-unit">Galleons</span>
+                </div>
+                <div class="card-actions">
+                  <a href="#modal-6" class="btn-quick-view">Quick View</a>
+                  <a href="#cart-added" class="btn-add-cart">Add to Cart</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 7 -->
+            <article class="product-card wood-oak core-phoenix">
+              <div class="lightning-streak-overlay">
+                <svg class="lightning-bolt-svg" viewBox="0 0 200 300" preserveAspectRatio="none">
+                  <path d="M 120 0 L 70 80 L 110 90 L 40 170 L 90 175 L 20 300" />
+                </svg>
+              </div>
+
+              <div class="card-media">
+                <span class="product-badge">Guild Standard</span>
+                
+                <input type="checkbox" id="wishlist-7" class="wishlist-toggle-input">
+                <label for="wishlist-7" class="wishlist-btn" aria-label="Add to Wishlist">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </label>
+
+                <div class="wand-svg-wrap">
+                  <svg class="wand-svg-graphic" width="180" height="180" viewBox="0 0 200 200" fill="none">
+                    <circle cx="100" cy="100" r="70" fill="rgba(250,204,21,0.25)" />
+                    <line x1="30" y1="170" x2="170" y2="30" stroke="#4a3728" stroke-width="9" stroke-linecap="round"/>
+                    <line x1="30" y1="170" x2="170" y2="30" stroke="#facc15" stroke-width="2"/>
+                    <polygon points="170,30 160,20 175,15 185,25" fill="#facc15"/>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="card-meta">Tempest Oak • 11.0 In</div>
+                <h3 class="product-name">Zephyr Spark Whisperer</h3>
+                <div class="rating-row">
+                  <span class="stars">★★★★★</span>
+                  <span>4.6 (22)</span>
+                </div>
+                <div class="price-row">
+                  <span class="price-amount">160</span>
+                  <span class="price-unit">Galleons</span>
+                </div>
+                <div class="card-actions">
+                  <a href="#modal-7" class="btn-quick-view">Quick View</a>
+                  <a href="#cart-added" class="btn-add-cart">Add to Cart</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card 8 -->
+            <article class="product-card wood-dragonwood core-crystal">
+              <div class="lightning-streak-overlay">
+                <svg class="lightning-bolt-svg" viewBox="0 0 200 300" preserveAspectRatio="none">
+                  <path d="M 120 0 L 70 80 L 110 90 L 40 170 L 90 175 L 20 300" />
+                </svg>
+              </div>
+
+              <div class="card-media">
+                <span class="product-badge">Masterwork</span>
+                
+                <input type="checkbox" id="wishlist-8" class="wishlist-toggle-input">
+                <label for="wishlist-8" class="wishlist-btn" aria-label="Add to Wishlist">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                  </svg>
+                </label>
+
+                <div class="wand-svg-wrap">
+                  <svg class="wand-svg-graphic" width="180" height="180" viewBox="0 0 200 200" fill="none">
+                    <circle cx="100" cy="100" r="70" fill="rgba(236,72,153,0.25)" />
+                    <line x1="30" y1="170" x2="170" y2="30" stroke="#3b1f2b" stroke-width="12" stroke-linecap="round"/>
+                    <line x1="30" y1="170" x2="170" y2="30" stroke="#ec4899" stroke-width="3"/>
+                    <polygon points="170,30 160,20 175,15 185,25" fill="#ec4899"/>
+                  </svg>
+                </div>
+              </div>
+
+              <div class="card-body">
+                <div class="card-meta">Dragonwood • 15.0 In</div>
+                <h3 class="product-name">Plasma Core Scepter</h3>
+                <div class="rating-row">
+                  <span class="stars">★★★★★</span>
+                  <span>5.0 (88)</span>
+                </div>
+                <div class="price-row">
+                  <span class="price-amount">480</span>
+                  <span class="price-unit">Galleons</span>
+                </div>
+                <div class="card-actions">
+                  <a href="#modal-8" class="btn-quick-view">Quick View</a>
+                  <a href="#cart-added" class="btn-add-cart">Add to Cart</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- CSS-driven Empty State Component -->
+            <div class="empty-state" id="empty-state">
+              <svg class="empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                <line x1="1" y1="1" x2="23" y2="23"></line>
+              </svg>
+              <h3 class="empty-title">No Wands Attunement Found</h3>
+              <p class="empty-desc">No storm wands match your current combination of filters. Click reset below to reveal all items.</p>
+              <button type="reset" class="btn-reset-filters">Reset All Filters</button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+
+    <!-- CSS :target Modals -->
+    <!-- Modal 1 -->
+    <div class="modal-overlay" id="modal-1">
+      <div class="modal-container">
+        <a href="#close" class="modal-close-btn" aria-label="Close modal">&times;</a>
+        <div class="modal-content-grid">
+          <div class="modal-media">
+            <svg class="wand-svg-graphic" width="180" height="180" viewBox="0 0 200 200" fill="none">
+              <circle cx="100" cy="100" r="70" fill="rgba(212,255,0,0.25)" />
+              <line x1="30" y1="170" x2="170" y2="30" stroke="#4a3728" stroke-width="10" stroke-linecap="round"/>
+              <line x1="30" y1="170" x2="170" y2="30" stroke="#d4ff00" stroke-width="3"/>
+              <polygon points="170,30 160,20 175,15 185,25" fill="#d4ff00"/>
+            </svg>
+          </div>
+          <div class="modal-details">
+            <span class="modal-badge">Bestseller</span>
+            <h2 class="modal-title">Volt-Arc Elder Wand</h2>
+            <div class="modal-price">340 Galleons</div>
+            <p class="modal-desc">
+              Carved from ancient elder wood struck by ball lightning. Houses a resonant Thunderbird Feather core that crackles when incantations are spoken.
+            </p>
+            <div class="modal-specs">
+              <div class="spec-item"><strong>Wood</strong><span>Elder Wood</span></div>
+              <div class="spec-item"><strong>Core</strong><span>Thunderbird Feather</span></div>
+              <div class="spec-item"><strong>Length</strong><span>13.5 Inches</span></div>
+              <div class="spec-item"><strong>Flexibility</strong><span>Unyielding</span></div>
+            </div>
+            <a href="#cart-added" class="btn-add-cart" style="text-align: center;">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal-overlay" id="modal-2">
+      <div class="modal-container">
+        <a href="#close" class="modal-close-btn" aria-label="Close modal">&times;</a>
+        <div class="modal-content-grid">
+          <div class="modal-media">
+            <svg class="wand-svg-graphic" width="180" height="180" viewBox="0 0 200 200" fill="none">
+              <circle cx="100" cy="100" r="70" fill="rgba(56,189,248,0.25)" />
+              <line x1="30" y1="170" x2="170" y2="30" stroke="#332419" stroke-width="12" stroke-linecap="round"/>
+              <polygon points="170,30 160,20 175,15 185,25" fill="#38bdf8"/>
+            </svg>
+          </div>
+          <div class="modal-details">
+            <span class="modal-badge">Storm Forged</span>
+            <h2 class="modal-title">Tempest Dragon Conduit</h2>
+            <div class="modal-price">420 Galleons</div>
+            <p class="modal-desc">
+              Heavy dragonwood handle wrapped in silver wire with a pulsing storm dragon heartstring core for maximum destructive arc potential.
+            </p>
+            <div class="modal-specs">
+              <div class="spec-item"><strong>Wood</strong><span>Dragonwood</span></div>
+              <div class="spec-item"><strong>Core</strong><span>Dragon Heartstring</span></div>
+              <div class="spec-item"><strong>Length</strong><span>14.0 Inches</span></div>
+              <div class="spec-item"><strong>Flexibility</strong><span>Slightly Supple</span></div>
+            </div>
+            <a href="#cart-added" class="btn-add-cart" style="text-align: center;">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal-overlay" id="modal-3">
+      <div class="modal-container">
+        <a href="#close" class="modal-close-btn" aria-label="Close modal">&times;</a>
+        <div class="modal-content-grid">
+          <div class="modal-media">
+            <svg class="wand-svg-graphic" width="180" height="180" viewBox="0 0 200 200" fill="none">
+              <circle cx="100" cy="100" r="70" fill="rgba(255,119,0,0.25)" />
+              <line x1="30" y1="170" x2="170" y2="30" stroke="#523924" stroke-width="9" stroke-linecap="round"/>
+              <polygon points="170,30 160,20 175,15 185,25" fill="#ff7700"/>
+            </svg>
+          </div>
+          <div class="modal-details">
+            <span class="modal-badge">Rare</span>
+            <h2 class="modal-title">Fulminant Phoenix Baton</h2>
+            <div class="modal-price">290 Galleons</div>
+            <p class="modal-desc">
+              Resonant tempest oak paired with an electro-charged phoenix feather core that glows warmly in the presence of charged storm clouds.
+            </p>
+            <div class="modal-specs">
+              <div class="spec-item"><strong>Wood</strong><span>Tempest Oak</span></div>
+              <div class="spec-item"><strong>Core</strong><span>Phoenix Feather</span></div>
+              <div class="spec-item"><strong>Length</strong><span>12.0 Inches</span></div>
+              <div class="spec-item"><strong>Flexibility</strong><span>Flexible</span></div>
+            </div>
+            <a href="#cart-added" class="btn-add-cart" style="text-align: center;">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="modal-overlay" id="modal-4">
+      <div class="modal-container">
+        <a href="#close" class="modal-close-btn" aria-label="Close modal">&times;</a>
+        <div class="modal-content-grid">
+          <div class="modal-media">
+            <svg class="wand-svg-graphic" width="180" height="180" viewBox="0 0 200 200" fill="none">
+              <circle cx="100" cy="100" r="70" fill="rgba(168,85,247,0.25)" />
+              <line x1="30" y1="170" x2="170" y2="30" stroke="#1c162b" stroke-width="11" stroke-linecap="round"/>
+              <polygon points="170,30 160,20 175,15 185,25" fill="#a855f7"/>
+            </svg>
+          </div>
+          <div class="modal-details">
+            <span class="modal-badge">Legendary</span>
+            <h2 class="modal-title">Obsidian Volt Spire</h2>
+            <div class="modal-price">510 Galleons</div>
+            <p class="modal-desc">
+              Carved obsidian glass conduit with embedded lightning-charged celestial crystal shard, perfect for precision elemental focus.
+            </p>
+            <div class="modal-specs">
+              <div class="spec-item"><strong>Wood</strong><span>Obsidian Bark</span></div>
+              <div class="spec-item"><strong>Core</strong><span>Celestial Crystal</span></div>
+              <div class="spec-item"><strong>Length</strong><span>11.5 Inches</span></div>
+              <div class="spec-item"><strong>Flexibility</strong><span>Solid Glass</span></div>
+            </div>
+            <a href="#cart-added" class="btn-add-cart" style="text-align: center;">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="modal-overlay" id="modal-5">
+      <div class="modal-container">
+        <a href="#close" class="modal-close-btn" aria-label="Close modal">&times;</a>
+        <div class="modal-content-grid">
+          <div class="modal-media">
+            <svg class="wand-svg-graphic" width="180" height="180" viewBox="0 0 200 200" fill="none">
+              <circle cx="100" cy="100" r="70" fill="rgba(34,197,94,0.25)" />
+              <line x1="30" y1="170" x2="170" y2="30" stroke="#23422d" stroke-width="8" stroke-linecap="round"/>
+              <polygon points="170,30 160,20 175,15 185,25" fill="#22c55e"/>
+            </svg>
+          </div>
+          <div class="modal-details">
+            <span class="modal-badge">Popular</span>
+            <h2 class="modal-title">Stormweaver Willow Stick</h2>
+            <div class="modal-price">195 Galleons</div>
+            <p class="modal-desc">
+              Flexible storm willow that bends with wind currents, infused with high-frequency electric scales for rapid defensive warding.
+            </p>
+            <div class="modal-specs">
+              <div class="spec-item"><strong>Wood</strong><span>Storm Willow</span></div>
+              <div class="spec-item"><strong>Core</strong><span>Thunderbird Feather</span></div>
+              <div class="spec-item"><strong>Length</strong><span>10.5 Inches</span></div>
+              <div class="spec-item"><strong>Flexibility</strong><span>Whippy</span></div>
+            </div>
+            <a href="#cart-added" class="btn-add-cart" style="text-align: center;">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 6 -->
+    <div class="modal-overlay" id="modal-6">
+      <div class="modal-container">
+        <a href="#close" class="modal-close-btn" aria-label="Close modal">&times;</a>
+        <div class="modal-content-grid">
+          <div class="modal-media">
+            <svg class="wand-svg-graphic" width="180" height="180" viewBox="0 0 200 200" fill="none">
+              <circle cx="100" cy="100" r="70" fill="rgba(226,232,240,0.2)" />
+              <line x1="30" y1="170" x2="170" y2="30" stroke="#111" stroke-width="11" stroke-linecap="round"/>
+              <polygon points="170,30 160,20 175,15 185,25" fill="#e2e8f0"/>
+            </svg>
+          </div>
+          <div class="modal-details">
+            <span class="modal-badge">New Release</span>
+            <h2 class="modal-title">Shadow Ebony Fulgurite</h2>
+            <div class="modal-price">380 Galleons</div>
+            <p class="modal-desc">
+              Deep midnight ebony polished to a mirror shine, holding fulgurite lightning glass at its tip to channel raw sky energy.
+            </p>
+            <div class="modal-specs">
+              <div class="spec-item"><strong>Wood</strong><span>Shadow Ebony</span></div>
+              <div class="spec-item"><strong>Core</strong><span>Thunderbird Feather</span></div>
+              <div class="spec-item"><strong>Length</strong><span>13.0 Inches</span></div>
+              <div class="spec-item"><strong>Flexibility</strong><span>Unbending</span></div>
+            </div>
+            <a href="#cart-added" class="btn-add-cart" style="text-align: center;">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 7 -->
+    <div class="modal-overlay" id="modal-7">
+      <div class="modal-container">
+        <a href="#close" class="modal-close-btn" aria-label="Close modal">&times;</a>
+        <div class="modal-content-grid">
+          <div class="modal-media">
+            <svg class="wand-svg-graphic" width="180" height="180" viewBox="0 0 200 200" fill="none">
+              <circle cx="100" cy="100" r="70" fill="rgba(250,204,21,0.25)" />
+              <line x1="30" y1="170" x2="170" y2="30" stroke="#4a3728" stroke-width="9" stroke-linecap="round"/>
+              <polygon points="170,30 160,20 175,15 185,25" fill="#facc15"/>
+            </svg>
+          </div>
+          <div class="modal-details">
+            <span class="modal-badge">Guild Standard</span>
+            <h2 class="modal-title">Zephyr Spark Whisperer</h2>
+            <div class="modal-price">160 Galleons</div>
+            <p class="modal-desc">
+              Lightweight tempest oak designed for swift casting, beginner lightning wizards, and delicate spark manipulation.
+            </p>
+            <div class="modal-specs">
+              <div class="spec-item"><strong>Wood</strong><span>Tempest Oak</span></div>
+              <div class="spec-item"><strong>Core</strong><span>Phoenix Feather</span></div>
+              <div class="spec-item"><strong>Length</strong><span>11.0 Inches</span></div>
+              <div class="spec-item"><strong>Flexibility</strong><span>Reasonably Pliant</span></div>
+            </div>
+            <a href="#cart-added" class="btn-add-cart" style="text-align: center;">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 8 -->
+    <div class="modal-overlay" id="modal-8">
+      <div class="modal-container">
+        <a href="#close" class="modal-close-btn" aria-label="Close modal">&times;</a>
+        <div class="modal-content-grid">
+          <div class="modal-media">
+            <svg class="wand-svg-graphic" width="180" height="180" viewBox="0 0 200 200" fill="none">
+              <circle cx="100" cy="100" r="70" fill="rgba(236,72,153,0.25)" />
+              <line x1="30" y1="170" x2="170" y2="30" stroke="#3b1f2b" stroke-width="12" stroke-linecap="round"/>
+              <polygon points="170,30 160,20 175,15 185,25" fill="#ec4899"/>
+            </svg>
+          </div>
+          <div class="modal-details">
+            <span class="modal-badge">Masterwork</span>
+            <h2 class="modal-title">Plasma Core Scepter</h2>
+            <div class="modal-price">480 Galleons</div>
+            <p class="modal-desc">
+              A formidable dual-core scepter emitting faint crackling plasma arcs along its carved grip. Reserved for arch-magi.
+            </p>
+            <div class="modal-specs">
+              <div class="spec-item"><strong>Wood</strong><span>Dragonwood</span></div>
+              <div class="spec-item"><strong>Core</strong><span>Celestial Crystal</span></div>
+              <div class="spec-item"><strong>Length</strong><span>15.0 Inches</span></div>
+              <div class="spec-item"><strong>Flexibility</strong><span>Unshakable</span></div>
+            </div>
+            <a href="#cart-added" class="btn-add-cart" style="text-align: center;">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Added Notification Target -->
+    <div class="modal-overlay" id="cart-added">
+      <div class="modal-container" style="max-width: 400px; padding: 24px; text-align: center;">
+        <a href="#close" class="modal-close-btn" aria-label="Close modal">&times;</a>
+        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#d4ff00" stroke-width="2" style="margin: 0 auto 16px;">
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+        </svg>
+        <h3 style="font-family: var(--font-heading); color: #fff; margin-bottom: 8px;">Added to Cart!</h3>
+        <p style="color: var(--text-secondary); margin-bottom: 20px;">The wand has been attuned to your shopping cart.</p>
+        <a href="#close" class="btn-add-cart" style="display: inline-block;">Continue Browsing</a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <a href="#" class="brand-logo">
+            <div class="logo-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+              </svg>
+            </div>
+            <div class="logo-text">Thunder <span>Wizard</span></div>
+          </a>
+          <p class="footer-desc">
+            Purveyors of high-conduction storm wands and arcane catalysts since the Great Tempest of 1492. Each wand is individually forged and storm-tested.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#">Wand Catalog</a></li>
+            <li><a href="#">Grimoires & Scrolls</a></li>
+            <li><a href="#">Potions & Elixirs</a></li>
+            <li><a href="#">Custom Wand Atelier</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Guild Support</h4>
+          <ul class="footer-links">
+            <li><a href="#">Spell Shield Guarantee</a></li>
+            <li><a href="#">Owl Post Shipping</a></li>
+            <li><a href="#">Attunement Care Guide</a></li>
+            <li><a href="#">Wandmaster Registry</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Tempest Dispatches</h4>
+          <p class="footer-desc" style="margin-bottom: 12px;">Subscribe to receive alerts when rare storm-forged wands are crafted.</p>
+          <div class="newsletter-form">
+            <input type="email" class="newsletter-input" placeholder="Your owl-address (email)..." aria-label="Email Address">
+            <a href="#subscribed" class="newsletter-btn">Join</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Thunder Wizard Wand Crafters. All rights reserved.</div>
+        <div>Designed for Master Wizards & Arcane Practitioners.</div>
+      </div>
+    </footer>
+
+  </form>
+
+</body>
+</html>
