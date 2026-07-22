@@ -989,13 +989,7 @@ img, svg {
   font-family: var(--font-heading);
   font-size: 1.4rem;
   font-weight: 800;
-  color: var(--text-main);
-}
-
-.price-unit {
-  font-size: 0.85rem;
   color: var(--accent-lightning);
-  font-weight: 600;
 }
 
 .card-actions {
@@ -1040,6 +1034,41 @@ img, svg {
 .btn-add-cart:hover {
   background: var(--accent-lightning-bright);
   box-shadow: 0 0 16px var(--accent-lightning);
+}
+
+/* Modal Utility Classes (Zero Inline Styles) */
+.modal-action-btn {
+  text-align: center;
+  margin-top: auto;
+}
+
+.cart-toast-container {
+  max-width: 400px;
+  padding: 24px;
+  text-align: center;
+}
+
+.cart-toast-icon {
+  margin: 0 auto 16px;
+}
+
+.cart-toast-title {
+  font-family: var(--font-heading);
+  color: var(--text-main);
+  margin-bottom: 8px;
+}
+
+.cart-toast-desc {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}
+
+.cart-toast-btn {
+  display: inline-block;
+}
+
+.footer-newsletter-desc {
+  margin-bottom: 12px;
 }
 
 /* ==========================================================================
@@ -1358,7 +1387,6 @@ img, svg {
     grid-template-columns: 1fr;
   }
 
-  /* Mobile Drawer Styling */
   .filter-sidebar {
     position: fixed;
     top: 0;
