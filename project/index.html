@@ -20,5 +20,59 @@
             </ul>
         </nav>
     </header>
+
+    <main>
+        <!-- Filter & Sort Controls -->
+        <section class="controls">
+            <!-- Filter Bar -->
+            <div class="filter-bar">
+                <h3>Filter By:</h3>
+                
+                <div class="filter-group">
+                    <label for="filter-price">Price:</label>
+                    <select id="filter-price" name="price">
+                        <option value="all">All Prices</option>
+                        <option value="under-50">Under 50 Gold</option>
+                        <option value="50-100">50 - 100 Gold</option>
+                        <option value="over-100">Over 100 Gold</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="filter-material">Material:</label>
+                    <select id="filter-material" name="material">
+                        <option value="all">All Materials</option>
+                        <option value="elder">Elder Wood</option>
+                        <option value="oak">Oak</option>
+                        <option value="phoenix-feather">Phoenix Feather</option>
+                        <option value="dragon-heartstring">Dragon Heartstring</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="filter-type">Wand Type:</label>
+                    <select id="filter-type" name="type">
+                        <option value="all">All Types</option>
+                        <option value="combat">Combat</option>
+                        <option value="defense">Defense</option>
+                        <option value="utility">Utility</option>
+                        <option value="healing">Healing</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Sort Bar -->
+            <div class="sort-bar">
+                <div class="sort-group">
+                    <label for="sort-by">Sort By:</label>
+                    <select id="sort-by" name="sort">
+                        <option value="popularity">Popularity</option>
+                        <option value="price-low-high">Price: Low to High</option>
+                        <option value="price-high-low">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
